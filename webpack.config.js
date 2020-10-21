@@ -14,7 +14,18 @@ module.exports = {
 		rules: [
 			{
 				test: /\.jsx?$/i,
-				use: "babel-loader",
+				use: {
+					loader: "babel-loader",
+					options: {
+						presets: [
+							[
+								"@babel/preset-env",
+								{ corejs: 3.6, useBuiltIns: "usage" },
+							],
+							"@babel/preset-react",
+						],
+					},
+				},
 				resolve: {
 					extensions: [".js", ".jsx"],
 				},

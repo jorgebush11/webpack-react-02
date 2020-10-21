@@ -8,6 +8,7 @@ function App() {
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
 				repudiandae!
 			</p>
+			<h3>Without Babel config file</h3>
 		</div>
 	)
 }
