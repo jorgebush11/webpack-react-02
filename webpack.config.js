@@ -44,4 +44,5 @@ module.exports = {
 			template: path.resolve("public", "index.html"),
 		}),
 	],
+	watch: true
 }
